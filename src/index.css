@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: radial-gradient(circle at 15% 10%, #1d2a34 0%, #05070a 45%, #020304 100%);
+  background-size: cover;
+  color: #f2e8cf;
+}
+
+.panel {
+  @apply bg-panel/85 backdrop-blur border border-white/10 rounded-md;
+}
+
+.splitter {
+  @apply bg-white/10 hover:bg-cyan/40 transition-colors;
+}
+
+.grain {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 10px 10px;
+}
